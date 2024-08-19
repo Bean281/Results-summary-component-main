@@ -1,47 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Play:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
 
-  Your Result
-  76
-  of 100
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="component-container">
+      <div class="result-container">
+        <p class="result-title">Your Result</p>
+        <div class="result-number-container">
+          <p class="your-result-number">76</p>
+          <p class="main-result-number">of 100</p>
+        </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+        <p class="rate">Great</p>
 
-  Reaction
-  80 / 100
+        <p class="rate-description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
 
-  Memory
-  92 / 100
+      <div class="summary-container">
+        <p class="summary-title">
+          Summary
+        </p>
+        <div class="box-summary-detail reaction">
+          <div class="detail-name">
+            <img src="./assets/images/icon-reaction.svg" alt="memory">
+            <p>Reaction</p>
+          </div>
+          <div class="detail-result">
+            <div class="detail-result-your">
+              <b>80</b> / 100
+            </div>
+          </div>
 
-  Verbal
-  61 / 100
+        </div>
 
-  Visual
-  72 / 100
+        <div class="box-summary-detail memory">
+          <div class="detail-name">
+            <img src="./assets/images/icon-memory.svg" alt="memory">
+            <p>Memory</p>
+          </div>
+          <div class="detail-result">
+            <div class="detail-result-your">
+              <b>92</b> / 100
+            </div>
+          </div>
+        </div>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="box-summary-detail verbal">
+          <div class="detail-name">
+            <img src="./assets/images/icon-verbal.svg" alt="memory">
+            <p>Verbal</p>
+          </div>
+          <div class="detail-result">
+            <div class="detail-result-your">
+              <b>61</b> / 100
+            </div>
+          </div>
+        </div>
+
+        <div class="box-summary-detail visual">
+          <div class="detail-name">
+            <img src="./assets/images/icon-visual.svg" alt="memory">
+            <p>Visual</p>
+          </div>
+          <div class="detail-result">
+            <div class="detail-result-your">
+              <b>72</b> / 100
+            </div>
+          </div>
+        </div>
+
+       
+        <p class="button">
+          Continue
+        </p>
+             
+      </div>
+    </div>
+  </body>
 </html>
